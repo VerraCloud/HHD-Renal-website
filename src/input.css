@@ -156,6 +156,18 @@
     letter-spacing: 0.06em;
     background-image: repeating-linear-gradient(135deg, #1A1E26 0 8px, #171B23 8px 16px);
   }
+  .logo-slot-filled {
+    @apply grid h-[52px] place-items-center gap-2 rounded-[3px] border border-[#E4E5E6] bg-white px-2.5;
+  }
+  .logo-slot-filled img {
+    @apply max-h-[26px] w-auto max-w-full object-contain;
+  }
+  .logo-badge {
+    @apply grid h-[68px] place-items-center gap-2 rounded-[3px] border border-[#E4E5E6] bg-white px-3;
+  }
+  .logo-badge img {
+    @apply max-h-[34px] w-auto max-w-full object-contain;
+  }
 
   /* ---------- forms ---------- */
   .field-label {
