@@ -12,7 +12,7 @@
 
 <header class="relative overflow-hidden bg-white bg-[linear-gradient(90deg,rgba(0,105,180,0.26),rgba(0,105,180,0.15)_38%,rgba(0,105,180,0.05)_70%,rgba(0,105,180,0)_94%)]">
   <div class="bg-ink-deep">
-    <div class="container-page flex flex-wrap items-center justify-between gap-x-7 gap-y-1.5 py-2.5 font-mono text-[12.5px] uppercase tracking-[0.1em] text-white">
+    <div class="container-header flex flex-wrap items-center justify-between gap-x-7 gap-y-1.5 py-2.5 font-mono text-[12.5px] uppercase tracking-[0.1em] text-white">
       <span class="text-white">Serving dialysis facilities across NY, CT &amp; NJ</span>
       <div class="flex flex-wrap items-center gap-x-[22px] gap-y-2">
         <span>27+ years in Nephrology</span>
@@ -23,15 +23,11 @@
       </div>
     </div>
   </div>
-  <div class="container-page flex items-center justify-between gap-6 py-5">
+  <div class="container-header grid grid-cols-[auto_1fr_auto] items-center gap-4 py-2">
     <a href="index.html" class="flex flex-none items-center gap-3 no-underline" aria-label="HHD Renal Consultant and Biomedical Services, Inc. home">
-      <span class="grid h-11 w-11 flex-none place-items-center rounded-[3px] bg-brand-teal font-mono text-[14.5px] font-medium text-white" aria-hidden="true">HHD</span>
-      <span class="flex flex-col gap-0.5 leading-tight">
-        <span class="text-[18px] font-semibold tracking-tight text-ink-navy">HHD Renal Consultant</span>
-        <span class="font-mono text-[12px] uppercase tracking-[0.06em] text-[#63676F]">&amp; Biomedical Services, Inc.</span>
-      </span>
+      <img src="hhdrenal-images/hhd-renal-logo.svg" alt="HHD Renal Consultant &amp; Biomedical Services, Inc." class="h-28 w-auto object-contain" width="276" height="112" />
     </a>
-    <nav aria-label="Primary" class="hidden items-center gap-6 lg:flex">
+    <nav aria-label="Primary" class="hidden items-center justify-center gap-4 xl:flex">
       <a href="about.html" class="nav-link">About</a>
       <a href="clinical-staffing.html" class="nav-link is-active">Staffing</a>
       <a href="biomedical-services.html" class="nav-link">Biomedical</a>
@@ -39,15 +35,17 @@
       <a href="compliance-consulting.html" class="nav-link">Compliance</a>
       <a href="blog.html" class="nav-link">Blog</a>
       <a href="contact.html" class="nav-link">Contact</a>
-      <a href="contact.html" class="btn-primary !px-[18px] !py-[11px] !text-[18px]">Request Staffing</a>
     </nav>
-    <button type="button" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav" class="flex h-12 w-12 flex-none flex-col items-center justify-center gap-[5px] rounded-[3px] border border-[#E0E1E4] bg-white lg:hidden">
-      <span class="block h-0.5 w-5 rounded bg-ink-navy" aria-hidden="true"></span>
-      <span class="block h-0.5 w-5 rounded bg-ink-navy" aria-hidden="true"></span>
-      <span class="block h-0.5 w-5 rounded bg-ink-navy" aria-hidden="true"></span>
-    </button>
+    <div class="col-start-3 flex flex-none items-center justify-end gap-4">
+      <a href="contact.html" class="btn-primary !px-[18px] !py-[11px] !text-[18px] hidden xl:inline-flex">Request Staffing</a>
+      <button type="button" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav" class="flex h-12 w-12 flex-none flex-col items-center justify-center gap-[5px] rounded-[3px] border border-[#E0E1E4] bg-white xl:hidden">
+        <span class="block h-0.5 w-5 rounded bg-ink-navy" aria-hidden="true"></span>
+        <span class="block h-0.5 w-5 rounded bg-ink-navy" aria-hidden="true"></span>
+        <span class="block h-0.5 w-5 rounded bg-ink-navy" aria-hidden="true"></span>
+      </button>
+    </div>
   </div>
-  <nav id="mobile-nav" aria-label="Primary mobile" class="hidden flex-col border-t border-[#E0E1E4] bg-[#F8F8F8] px-5 pb-5 pt-2 lg:hidden">
+  <nav id="mobile-nav" aria-label="Primary mobile" class="hidden flex-col border-t border-[#E0E1E4] bg-[#F8F8F8] px-5 pb-5 pt-2 xl:hidden">
     <a href="about.html" class="mobile-nav-link">About</a>
     <a href="clinical-staffing.html" class="mobile-nav-link">Staffing</a>
     <a href="biomedical-services.html" class="mobile-nav-link">Biomedical</a>
@@ -215,7 +213,7 @@
   <div class="container-page grid gap-x-10 gap-y-11 pb-8 pt-14 [grid-template-columns:repeat(auto-fit,minmax(230px,1fr))] md:pt-16">
     <div class="flex flex-col gap-[18px]">
       <div class="flex items-center gap-3">
-        <span class="grid h-[42px] w-[42px] flex-none place-items-center rounded-[3px] bg-brand-teal font-mono text-[14.5px] font-medium text-white" aria-hidden="true">HHD</span>
+        <img src="hhdrenal-images/hhd-renal-icon.svg" alt="" class="h-[42px] w-[30px] flex-none object-contain" aria-hidden="true" width="30" height="42" />
         <span class="flex flex-col gap-0.5 leading-tight">
           <span class="text-[18px] font-semibold tracking-tight text-white">HHD Renal Consultant</span>
           <span class="font-mono text-[12px] uppercase tracking-[0.06em] text-[#9CA0A8]">&amp; Biomedical Services, Inc.</span>
@@ -253,9 +251,7 @@
         <div class="logo-slot-filled"><img src="hhdrenal-images/logos/aami-logo.webp" alt="AAMI" /></div>
         <div class="logo-slot-filled"><img src="hhdrenal-images/logos/nkf-logo.svg" alt="National Kidney Foundation" /></div>
         <div class="logo-slot-filled"><img src="hhdrenal-images/logos/anna-logo.webp" alt="American Nephrology Nurses Association" /></div>
-        <div class="logo-slot col-span-2">LOGO SLOT</div>
       </div>
-      <p class="font-mono text-[12.5px] leading-relaxed text-[#7D828A]">Company logo to be supplied.</p>
     </div>
   </div>
 

@@ -107,9 +107,36 @@
     apply();
   }
 
+  function initScrollReveal() {
+    if (!("IntersectionObserver" in window)) return;
+    var targets = Array.prototype.slice.call(
+      document.querySelectorAll(".card, .logo-badge, .logo-slot-filled")
+    );
+    if (!targets.length) return;
+
+    var io = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+
+    targets.forEach(function (el, i) {
+      el.classList.add("reveal");
+      el.style.transitionDelay = (i % 4) * 70 + "ms";
+      io.observe(el);
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initMobileNav();
     initContactForm();
     initBlogFilters();
+    initScrollReveal();
   });
 })();
