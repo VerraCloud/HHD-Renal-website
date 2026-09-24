@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.hhdrenal.com/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.hhdrenal.com/hhdrenal-images/dialysis-recliners.webp</image:loc>
+      <image:title>Hemodialysis treatment stations in a dialysis clinic</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.hhdrenal.com/clinical-staffing.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.hhdrenal.com/hhdrenal-images/dialysis-recliners.webp</image:loc>
+      <image:title>Hemodialysis treatment stations in a dialysis clinic</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.hhdrenal.com/biomedical-services.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.hhdrenal.com/hhdrenal-images/dialysis-machine.webp</image:loc>
+      <image:title>Dialysis machine biomedical service</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.hhdrenal.com/hhdrenal-images/reverse-osmosis.webp</image:loc>
+      <image:title>Reverse osmosis water treatment system</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.hhdrenal.com/education-training.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.hhdrenal.com/hhdrenal-images/adult-students.webp</image:loc>
+      <image:title>Dialysis technician training and certification exam preparation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.hhdrenal.com/hhdrenal-images/bonent-approval-certificate.webp</image:loc>
+      <image:title>BONENT approval certificate</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.hhdrenal.com/compliance-consulting.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hhdrenal.com/about.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hhdrenal.com/contact.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hhdrenal.com/blog.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

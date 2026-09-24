@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./css/style.css --minify",
-    "watch": "tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+    "watch": "tailwindcss -i ./src/input.css -o ./css/style.css --watch",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,10 @@
   "type": "commonjs",
   "devDependencies": {
     "tailwindcss": "^3.4.19"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.3",
+    "express": "^5.2.1",
+    "nodemailer": "^10.0.10"
   }
 }

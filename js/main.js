@@ -27,12 +27,67 @@
     var success = document.getElementById("contact-success");
     if (!form || !success) return;
 
+    var errorBox = document.getElementById("contact-error");
+    var errorMessage = document.getElementById("contact-error-message");
+    var submitBtn = document.getElementById("contact-submit");
+    var submitDefaultText = submitBtn ? submitBtn.textContent : "";
+
+    function showError(message) {
+      if (!errorBox) return;
+      if (errorMessage) errorMessage.textContent = message;
+      errorBox.classList.remove("hidden");
+    }
+
+    function hideError() {
+      if (errorBox) errorBox.classList.add("hidden");
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      form.classList.add("hidden");
-      success.classList.remove("hidden");
-      success.setAttribute("tabindex", "-1");
-      success.focus();
+      hideError();
+
+      var data = {
+        name: form.elements["name"].value,
+        facility: form.elements["facility"].value,
+        email: form.elements["email"].value,
+        phone: form.elements["phone"].value,
+        message: form.elements["message"].value,
+        company: form.elements["company"] ? form.elements["company"].value : "",
+      };
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending…";
+      }
+
+      fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+        .then(function (res) {
+          return res.json().then(function (body) {
+            return { ok: res.ok, body: body };
+          });
+        })
+        .then(function (result) {
+          if (!result.ok) {
+            throw new Error((result.body && result.body.error) || "Something went wrong. Please try again.");
+          }
+          form.classList.add("hidden");
+          success.classList.remove("hidden");
+          success.setAttribute("tabindex", "-1");
+          success.focus();
+        })
+        .catch(function (err) {
+          showError(err.message || "Something went wrong sending your message. Please try again or call us directly.");
+        })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = submitDefaultText;
+          }
+        });
     });
 
     var again = document.getElementById("contact-again");

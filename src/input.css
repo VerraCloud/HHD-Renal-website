@@ -249,10 +249,10 @@
     @apply max-h-[26px] w-auto max-w-full object-contain;
   }
   .logo-badge {
-    @apply h-[68px] px-3;
+    @apply h-[104px] px-4;
   }
   .logo-badge img {
-    @apply max-h-[34px] w-auto max-w-full object-contain;
+    @apply max-h-[64px] w-auto max-w-full object-contain;
   }
   .logo-slot-filled:hover,
   .logo-badge:hover {
